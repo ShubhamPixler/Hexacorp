@@ -1,0 +1,45 @@
+@import "./../../scss/mixin";
+@import "./../../scss/var";
+
+section.bannerSection {
+    height: 720px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include flexSpaceBeteenCenter;
+
+    .bannerTitle {
+        margin-bottom: 20px;
+        h1{
+             @include primaryHeading;
+        }
+        p{
+            color: rgb(255 255 255 / 70%);
+            margin-top: 10px
+        }
+    }
+        .bannerBtn{ 
+            .vidoeBtn{
+                @include globalBtn;
+                background: #003865;
+                color: #fff;
+                padding: 12px 25px 12px 50px;
+                position: relative;
+                margin-right: 25px;
+                img{
+                    position: absolute;
+                    left: 17px;
+                }
+            }
+            .nextBnt{
+                @include globalBtn;
+                padding: 12px 50px 12px 25px;
+                position: relative;
+                img{
+                    position: absolute;
+                    right: 17px;
+                }
+            }
+        }
+
+}

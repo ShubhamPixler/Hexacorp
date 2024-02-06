@@ -1,0 +1,43 @@
+@import "./../../scss/mixin";
+@import "./../../scss/var";
+
+
+header.mainHeader {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 15px 0;
+    z-index: 9;
+
+    .navbar{
+        .logo a{
+            display: flex;
+        }
+        @include flexSpaceBeteenCenter;
+        .headermenu{
+            display: flex;
+            align-items: center;
+            .menus{
+                ul li {
+                    margin-left: 25px;
+                    display: inline-block;
+                        a{
+                            color: #fff;
+                            font-size: 16px;
+                            text-decoration: none;
+                            font-family: $PoppinsMedium ;
+                         }
+                    }
+                }
+            .contactusButton {
+                margin-left: 25px;
+
+                .btn{
+                    @include globalBtn;
+                    }
+            }
+        }
+        
+    }
+}
